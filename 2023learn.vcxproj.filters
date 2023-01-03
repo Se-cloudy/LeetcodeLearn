@@ -18,10 +18,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="teat.cpp">
+    <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="1.2积压订单.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="1.3查看数字.cpp">
       <Filter>2023</Filter>
     </ClCompile>
   </ItemGroup>

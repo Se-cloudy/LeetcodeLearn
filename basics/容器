@@ -1,0 +1,3 @@
+C++的容器STL。。这里是隶属于python的collections
+collections.__all__ = ['deque', 'defaultdict', 'namedtuple', 'UserDict', 'UserList', 'UserString', 'Counter', 'OrderedDict', 'ChainMap']
+https://zhuanlan.zhihu.com/p/343747724

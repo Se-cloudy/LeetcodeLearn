@@ -1,0 +1,8 @@
+字典：dic = {}
+    删除键值对：del dic['key1']
+    计数：dic.get(xx,0) + 1
+哈希表：mp = collections.defaultdict(), etc
+数组：np.array([]), 泛用性最广，可以切片
+
+列表：List=[[],[]]，不能切片
+    取出一列的构造：[i[0] for i in ls]

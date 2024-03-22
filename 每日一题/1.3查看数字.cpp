@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	string s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles";
-	int pre = 0;//比对的数字大小
+	int pre = 0;//卤脠露脭碌脛脢媒脳脰麓贸脨隆
 	int i = 0;
 	while (i < s.size())
 	{

@@ -4,8 +4,8 @@
 
 using namespace std;
 
-//1801. »ıÑ¹¶©µ¥ÖĞµÄ¶©µ¥×ÜÊı https://leetcode.cn/problems/number-of-orders-in-the-backlog/
-//·­ÒëÌâÄ¿¼´¿É¡£×¢ÒâstlÏ¸½Ú¡£
+//1801. ç§¯å‹è®¢å•ä¸­çš„è®¢å•æ€»æ•° https://leetcode.cn/problems/number-of-orders-in-the-backlog/
+//ç¿»è¯‘é¢˜ç›®å³å¯ã€‚æ³¨æ„stlç»†èŠ‚ã€‚
 int main()
 {
 	vector<vector<int>> ords = { {10, 5, 0},{15, 2, 1},{25, 1, 1},{30, 4, 0} };
@@ -15,15 +15,15 @@ int main()
 	priority_queue<pair<int, int>, vector<pair<int, int>>, less<pair<int, int>>> buyOrders;
 	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> sellOrders;
 
-	for (auto&& ords : ords)  //±éÀúÃ¿·İ¶©µ¥Êı×é
+	for (auto&& ords : ords)  //éå†æ¯ä»½è®¢å•æ•°ç»„
 	{
 		int price = ords[0], amt = ords[1], otype = ords[2];
 		if (otype == 0)  //buy
 		{
-			while (amt > 0 && !sellOrders.empty() && sellOrders.top().first <= price)//¿ÉÒÔ¹ºÂò
+			while (amt > 0 && !sellOrders.empty() && sellOrders.top().first <= price)//å¯ä»¥è´­ä¹°
 			{
 				auto selltemp = sellOrders.top();
-				sellOrders.pop();//ÎªÊ²Ã´¾ÍÏÈÈ«²¿·ÅÁË
+				sellOrders.pop();//ä¸ºä»€ä¹ˆå°±å…ˆå…¨éƒ¨æ”¾äº†
 
 				int sellamt = min(amt, selltemp.second);
 				amt = amt - sellamt;
@@ -32,7 +32,7 @@ int main()
 					sellOrders.push(selltemp);
 			}
 			if (amt > 0)
-				buyOrders.emplace(price,amt);//ÎªÊ²Ã´ÊÇÔÚÄ©¶Ë²åÈë
+				buyOrders.emplace(price,amt);//ä¸ºä»€ä¹ˆæ˜¯åœ¨æœ«ç«¯æ’å…¥
 		}
 		else //sell
 		{
@@ -53,7 +53,7 @@ int main()
 	}
 
 	int total = 0;
-	//±éÀú¼ÆÊı ¼ÇµÃÈ¡Ä£
+	//éå†è®¡æ•° è®°å¾—å–æ¨¡
 	while (!buyOrders.empty())
 	{
 		total = (total + buyOrders.top().second) % MOD;

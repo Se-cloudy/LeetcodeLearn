@@ -5,3 +5,6 @@
 2、腾讯 推荐算法
 和为k的连续子数组个数：[560]{https://leetcode.cn/problems/subarray-sum-equals-k/description/}
 （没做出来 没控制住连续）
+
+3、腾讯 推荐算法
+大于一半的元素 摩尔投票

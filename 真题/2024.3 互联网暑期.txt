@@ -2,11 +2,11 @@
 仅在窗口内可见 求滑动窗口最大值：[239]{https://leetcode.cn/problems/sliding-window-maximum/description/}
 （超 原来是困难 怪不得没让我真写。。纯唠嗑人生导师面试）
 
-2、腾讯 推荐算法
+2、腾讯视频 推荐算法
 和为k的连续子数组个数：[560]{https://leetcode.cn/problems/subarray-sum-equals-k/description/}
 （没做出来 没控制住连续）
 
-3、腾讯 推荐算法
+3、腾讯新闻 推荐算法
 大于一半的元素 摩尔投票
 
 4、饿了么 推荐算法
